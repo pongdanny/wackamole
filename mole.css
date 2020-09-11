@@ -38,3 +38,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
+
+.won {
+  font-size: 2em;
+  text-align: center;
+}
