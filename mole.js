@@ -15,7 +15,7 @@ function popUpRandomMole() {
   mole.classList.remove("wgs__mole-head--hidden");
   setTimeout(() => {
     hideMole(mole);
-  }, 1000);
+  }, 3000);
 }
 
 function hideMole(mole) {
@@ -29,4 +29,11 @@ window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     popUpRandomMole();
   }, 0);
+
+  let moleHeads = document.querySelectorAll(".wgs__mole-head");
+  moleHeads.forEach((moleHead) => {
+    moleHead.addEventListener("click", (event) => {
+      event.target.classList.add("wgs__mole-head--hidden");
+    });
+  });
 });
